@@ -1,0 +1,138 @@
+body {
+  background: #f7f7f7;
+  font-family: Poppins, sans-serif;
+}
+
+.app {
+  width: 400px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  background: #08325f;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.todo-item {
+  width: 75%; /* same width as input */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f7c4;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* ✅ aligns to the left */
+  margin-top: 15px;
+  width: 100%; /* makes it take full width of app box */
+}
+
+
+/* text area */
+.todo-text {
+  flex: 1; /* allows text to take full remaining width */
+  font-size: 16px;
+   text-align: left;
+}
+
+/* done button */
+.delete-btn {
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-left: 12px; /* consistent small gap */
+}
+
+.delete-btn:hover {
+  background: #0056b3;
+}
+/* Group buttons side by side */
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+/* Done button */
+.done-btn {
+  background: #489f5c; /* green */
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.done-btn:hover {
+  background: #17251a;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #fefefe; /* red */
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 500;
+
+}
+
+.delete-btn:hover {
+  background: #100909;
+}
+
+/* Completed task */
+.todo-text.completed {
+  text-decoration: line-through;
+  color: rgb(2, 1, 1);
+  
+  transition: all 0.3s ease;
+}
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app {
+  margin-top: 40px;
+}
+
+.description {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(to right, #eeecd6, #eaebd5);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+}
